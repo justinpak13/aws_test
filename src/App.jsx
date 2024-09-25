@@ -45,6 +45,7 @@ export default function App() {
     >
       <Heading level={1}>My Profile</Heading>
       <p> Here is some other text </p>
+      <p> {userprofiles} </p>
 
       <Divider />
 
