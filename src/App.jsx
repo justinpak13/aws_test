@@ -34,18 +34,31 @@ export default function App() {
     setUserProfiles(profiles);
   }
 
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
   return (
     <Flex
       className="App"
       justifyContent="center"
       alignItems="center"
       direction="column"
-      width="70%"
+      width="100%"
       margin="0 auto"
     >
       <Heading level={1}>My Profile</Heading>
       <p> Here is some other text </p>
-      <p> {userprofiles} </p>
+      <p> 
+        Welcome {userprofiles}
+
+      </p>
+
+      <Button onClick = {handleClick}>
+        You pressed me {count} times
+      </Button>
 
       <Divider />
 
